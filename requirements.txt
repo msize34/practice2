@@ -1,0 +1,6 @@
+Flask
+flask-bootstrap
+numpy
+Pillow
+opencv-python
+gunicorn
