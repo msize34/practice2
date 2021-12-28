@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html lang="ja">
     <head>
-        <meta charset="utf-8">
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
   <title>2or3predict</title>
         <style>body {padding: 10px;}</style>
         <!-- Bootstrap -->
         <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.css">
     </head>
     <body>
-        <div class="jumbotron bg-dark text-white">
-            <h1 class="display-4 justify-content-center" style="text-align: center">
-                    2,3予測AI
-            </h1>
-            <form class="form-inline justify-content-center mt-4"
-                  method="POST" action="/predict" enctype="multipart/form-data">
-                  <div class="form-group">
-                    <label for="exampleInputFile" style="text-align: center">
-                        File input
-                    </label>
-                    <input type="file" id="exampleInputFile" name="input_file">
-                  </div>
-                  <button type="submit" class="btn btn-info">
-                      Upload
-                  </button>
-            </form>
-            <p class="help-block mt-1" style="text-align: center">
-                        Example block-level help text here.
-            </p>
+        <div class="container-fluid">
+            <div class="jumbotron bg-dark text-white ">
+
+                <h1 class="display-4 justify-content-center" style="text-align: center">
+                        2,3予測AI
+                </h1>
+                <form class="form-inline justify-content-center mt-4 "
+                      method="POST" action="/predict" enctype="multipart/form-data">
+                      <div class="form-group">
+                        <label for="exampleInputFile" style="text-align: center">
+                            File input
+                        </label>
+                        <input type="file" id="exampleInputFile" name="input_file">
+                      </div>
+                      <button type="submit" class="btn btn-info">
+                          Upload
+                      </button>
+                </form>
+                <p class="help-block mt-1" style="text-align: center">
+                            Example block-level help text here.
+                </p>
+            </div>
         </div>
         <!-- Bootstrap -->
         <script src="/static/./js/bootstrap.min.js"></script>
