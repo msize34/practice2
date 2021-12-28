@@ -16,13 +16,13 @@ def index():
 def predict():
     import numpy as np
     from PIL import Image
-    import cv2
     import pickle
     def preProcess(file):
         img = Image.open(file)
         img = img.convert('L')
+        img = img.resize((32, 32))
         img = np.asarray(img)
-        img = cv2.resize(img, dsize=(32, 32))
+
         #     ret,img = cv2.threshold(img,130,255,cv2.THRESH_BINARY)
 
         img = img.reshape(-1)
