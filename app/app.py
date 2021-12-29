@@ -8,7 +8,7 @@ bootstrap=Bootstrap(app)
 #「/」へアクセスがあった場合に、"Hello World"の文字列を返す
 @app.route("/")
 def index():
-    return render_template("google846e6680bb2e5026.html")
+    return render_template("index.html")
 
 #「/index」へアクセスがあった場合に、「index.html」を返す
 @app.route('/predict', methods=['POST'])
