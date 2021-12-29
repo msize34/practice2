@@ -10,7 +10,7 @@ bootstrap=Bootstrap(app)
 def index():
     return render_template("index.html")
 
-@app.route("/check")
+@app.route("/")
 def check():
     return render_template("google846e6680bb2e5026.html")
 
