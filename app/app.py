@@ -10,6 +10,9 @@ bootstrap=Bootstrap(app)
 def index():
     return render_template("index.html")
 
+@app.route("/google")
+def index():
+    return render_template("google846e6680bb2e5026.html")
 
 #「/index」へアクセスがあった場合に、「index.html」を返す
 @app.route('/predict', methods=['POST'])
