@@ -39,6 +39,6 @@ def predict():
     else:
         last=2
     return render_template('result.html',result_output=last)
-#おまじない
-if __name__ == "__main__":
-    app.run(debug=True)
+# #おまじない
+# if __name__ == "__main__":
+#     app.run(debug=True)
